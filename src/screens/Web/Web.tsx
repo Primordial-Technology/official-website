@@ -26,13 +26,13 @@ export const Web = (): JSX.Element => {
       title: "Industry Professionals",
       description:
         "Access to a wider pipeline of creatives and benefit from network effects in the likes of a creative agency",
-      position: { top: "71px", left: "980px" },
+      position: { top: "71px", left: "1060px" },
     },
     {
       title: "Music Tech",
       description:
         "Create an open platform for other technologists to make the industry more transparent and data-driven",
-      position: { top: "335px", left: "980px" },
+      position: { top: "335px", left: "1060px" },
     },
   ];
 
@@ -41,7 +41,7 @@ export const Web = (): JSX.Element => {
       className="bg-white grid justify-items-center [align-items:start] w-screen"
       data-model-id="107:6389"
     >
-      <div className="bg-white overflow-hidden w-[1280px] h-[2600px] relative">
+      <div className="bg-white overflow-hidden w-[1440px] h-[2600px] relative">
         {/* Header Navigation */}
         <header className="absolute top-0 left-0 w-full z-10">
           <img
@@ -74,7 +74,7 @@ export const Web = (): JSX.Element => {
         </header>
 
         {/* Hero Section */}
-        <section className="absolute w-[1280px] h-[600px] top-[100px] left-0 bg-[url(https://c.animaapp.com/iORgyB1o/img/still-2025-05-03-141559-3-5-1-1.png)] bg-cover bg-[50%_50%]">
+        <section className="absolute w-[1440px] h-[600px] top-[100px] left-0 bg-[url(https://c.animaapp.com/iORgyB1o/img/still-2025-05-03-141559-3-5-1-1.png)] bg-cover bg-[50%_50%]">
           <h1 className="absolute w-[380px] top-12 left-[50px] [font-family:'Founders_Grotesk_X-Cond_SmBd',Helvetica] font-semibold text-white text-[66px] tracking-[0] leading-[60px] uppercase">
             PRIMORDIAL IS A QUANT-DRIVEN MUSIC INVESTMENT VENTURE RESHAPING HOW
             THE WORLD INVESTS IN MUSIC.
@@ -82,19 +82,19 @@ export const Web = (): JSX.Element => {
         </section>
 
         {/* Mission Section */}
-        <section className="h-[600px] top-[700px] bg-[url(https://c.animaapp.com/iORgyB1o/img/vector.svg)] bg-[100%_100%] absolute w-[1280px] left-0">
-          <div className="relative w-[1163px] h-[600px] left-[117px] bg-[url(https://c.animaapp.com/iORgyB1o/img/group.png)] bg-[100%_100%]">
+        <section className="h-[600px] top-[700px] bg-[url(https://c.animaapp.com/iORgyB1o/img/vector.svg)] bg-cover absolute w-[1440px] left-0">
+          <div className="relative w-[1300px] h-[600px] left-[117px] bg-[url(https://c.animaapp.com/iORgyB1o/img/group.png)] bg-cover">
             <img
-              className="absolute w-[77px] h-[88px] top-[89px] left-[484px]"
+              className="absolute w-[77px] h-[88px] top-[89px] left-[524px]"
               alt="Mission Icon"
               src="https://c.animaapp.com/iORgyB1o/img/group-162@2x.png"
             />
 
-            <h2 className="absolute top-[209px] left-[434px] [font-family:'Founders_Grotesk-Bold',Helvetica] font-bold text-white text-4xl tracking-[0] leading-[45px] whitespace-nowrap">
+            <h2 className="absolute top-[209px] left-[466px] [font-family:'Founders_Grotesk-Bold',Helvetica] font-bold text-white text-4xl tracking-[0] leading-[45px] whitespace-nowrap">
               Our Mission
             </h2>
 
-            <p className="absolute w-[380px] top-[264px] left-[337px] [font-family:'Founders_Grotesk-Regular',Helvetica] font-normal text-white text-[23px] text-center tracking-[0] leading-[normal]">
+            <p className="absolute w-[380px] top-[264px] left-[366px] [font-family:'Founders_Grotesk-Regular',Helvetica] font-normal text-white text-[23px] text-center tracking-[0] leading-[normal]">
               To build a new ecosystem where capital and creativity co-exist —
               unlocking new forms of artistic expression, financial opportunity,
               and cultural impact. <br />
@@ -106,8 +106,8 @@ export const Web = (): JSX.Element => {
         </section>
 
         {/* Creative & Investment Facing Section */}
-        <section className="h-[600px] top-[1300px] bg-[url(https://c.animaapp.com/iORgyB1o/img/01-1.png)] bg-cover bg-[50%_50%] absolute w-[1280px] left-0">
-          <div className="absolute top-[205px] left-[50px]">
+        <section className="h-[600px] top-[1300px] bg-[url(https://c.animaapp.com/iORgyB1o/img/01-1.png)] bg-cover bg-[50%_50%] absolute w-[1440px] left-0">
+          <div className="absolute top-[205px] left-[150px]">
             <h3 className="[font-family:'Founders_Grotesk-Bold',Helvetica] font-bold text-black text-4xl tracking-[0] leading-[45px] whitespace-nowrap">
               Creative Facing
             </h3>
@@ -119,7 +119,7 @@ export const Web = (): JSX.Element => {
             </p>
           </div>
 
-          <div className="absolute top-[205px] left-[850px]">
+          <div className="absolute top-[205px] left-[950px]">
             <h3 className="[font-family:'Founders_Grotesk-Bold',Helvetica] font-bold text-black text-4xl tracking-[0] leading-[45px] whitespace-nowrap">
               Investment Facing
             </h3>
@@ -131,15 +131,15 @@ export const Web = (): JSX.Element => {
           </div>
 
           <img
-            className="absolute w-80 h-[468px] top-[63px] left-[494px]"
+            className="absolute w-80 h-[468px] top-[63px] left-[584px]"
             alt="Central Diagram"
             src="https://c.animaapp.com/iORgyB1o/img/group-163@2x.png"
           />
         </section>
 
         {/* Stakeholders Section */}
-        <section className="h-[600px] top-[1900px] bg-black overflow-hidden absolute w-[1280px] left-0">
-          <div className="absolute w-[899px] h-[588px] top-8 left-px">
+        <section className="h-[600px] top-[1900px] bg-black overflow-hidden absolute w-[1440px] left-0">
+          <div className="absolute w-[899px] h-[588px] top-8 left-[90px]">
             <div className="absolute w-[896px] h-[581px] top-[7px] left-0">
               <div className="relative h-[561px]">
                 <img
@@ -149,7 +149,7 @@ export const Web = (): JSX.Element => {
                 />
 
                 <img
-                  className="absolute w-[460px] h-[305px] top-[255px] left-0 aspect-[1.41] object-cover"
+                  className="absolute w-[460px] h-[305px] top-[255px] left-[-90px] aspect-[1.41] object-cover"
                   alt="Additional Visualization"
                   src="https://c.animaapp.com/iORgyB1o/img/222-1@2x.png"
                 />
@@ -211,19 +211,19 @@ export const Web = (): JSX.Element => {
         </section>
 
         {/* Footer */}
-        <footer className="h-[100px] top-[2500px] bg-[url(https://c.animaapp.com/iORgyB1o/img/vector-1.svg)] bg-[100%_100%] absolute w-[1280px] left-0">
+        <footer className="h-[100px] top-[2500px] bg-[url(https://c.animaapp.com/iORgyB1o/img/vector-1.svg)] bg-cover absolute w-[1440px] left-0">
           <img
             className="absolute w-[172px] h-8 top-[34px] left-[50px] aspect-[5.39]"
             alt="Primordial Logo"
             src="https://c.animaapp.com/iORgyB1o/img/group-152@2x.png"
           />
 
-          <p className="absolute top-[45px] left-[523px] [font-family:'Founders_Grotesk-Regular',Helvetica] font-normal text-white text-xs tracking-[0] leading-[18px] whitespace-nowrap">
+          <p className="absolute top-[45px] left-[613px] [font-family:'Founders_Grotesk-Regular',Helvetica] font-normal text-white text-xs tracking-[0] leading-[18px] whitespace-nowrap">
             ©PRIMORDIAL 2025 // LEGAL // TERMS OF USE
           </p>
 
           <img
-            className="absolute w-[180px] h-[30px] top-[37px] left-[1044px]"
+            className="absolute w-[180px] h-[30px] top-[37px] left-[1144px]"
             alt="Social Media Icons"
             src="https://c.animaapp.com/iORgyB1o/img/socials-icons.svg"
           />
