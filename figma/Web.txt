@@ -1,0 +1,190 @@
+// Investors
+color: white;
+ font-size: 26px;
+ font-family: Founders Grotesk;
+ font-weight: 600;
+ line-height: 34.81px;
+ word-wrap: break-word
+---
+// Industry Professionals
+color: white;
+ font-size: 26px;
+ font-family: Founders Grotesk;
+ font-weight: 600;
+ line-height: 26.80px;
+ word-wrap: break-word
+---
+// Music Tech
+color: white;
+ font-size: 26px;
+ font-family: Founders Grotesk;
+ font-weight: 600;
+ line-height: 20.89px;
+ word-wrap: break-word
+---
+// Provide differentiated returns and access to a community of industry participants to fund other creative projects
+color: white;
+ font-size: 20px;
+ font-family: Founders Grotesk;
+ font-weight: 400;
+ word-wrap: break-word
+---
+// Access to a wider pipeline of creatives and benefit from network effects in the likes of a creative agency
+color: white;
+ font-size: 20px;
+ font-family: Founders Grotesk;
+ font-weight: 400;
+ word-wrap: break-word
+---
+// Create an open platform for other technologists to make the industry more transparent and data-driven
+color: white;
+ font-size: 20px;
+ font-family: Founders Grotesk;
+ font-weight: 400;
+ word-wrap: break-word
+---
+// Artists
+color: white;
+ font-size: 26px;
+ font-family: Founders Grotesk;
+ font-weight: 600;
+ line-height: 34.81px;
+ word-wrap: break-word
+---
+// Empowering artists with not only capital but professional development and freedom to launch future projects
+color: white;
+ font-size: 20px;
+ font-family: Founders Grotesk;
+ font-weight: 400;
+ word-wrap: break-word
+---
+// Ecosystem
+color: white;
+ font-size: 35.95px;
+ font-family: Founders Grotesk;
+ font-weight: 700;
+ line-height: 32.10px;
+ word-wrap: break-word
+---
+// To build a new ecosystem where capital and creativity co-exist — unlocking new forms of artistic expression, financial opportunity, and cultural impact.
+<br/>We are here to redefine how value flows through music — We’re creating the next evolution of the music market: transparent, data-rich, win-win.
+color: white;
+ font-size: 23px;
+ font-family: Founders Grotesk;
+ font-weight: 400;
+ word-wrap: break-word
+---
+// Our Mission
+color: white;
+ font-size: 36px;
+ font-family: Founders Grotesk;
+ font-weight: 700;
+ line-height: 45px;
+ word-wrap: break-word
+---
+// We believe music is more than a product — it’s legacy, evolution, and emotion. And the people behind it deserve more than a payout. They deserve partnership.
+<br/>At Primordial, we treat rights holders as collaborators. <br/>
+color: black;
+ font-size: 23px;
+ font-family: Founders Grotesk;
+ font-weight: 400;
+ word-wrap: break-word
+---
+// Creative Facing 
+color: black;
+ font-size: 36px;
+ font-family: Founders Grotesk;
+ font-weight: 700;
+ line-height: 45px;
+ word-wrap: break-word
+---
+//  Our system unlocks hidden value, avoids hype cycles, and builds portfolios designed for the dual objectives of performance and resilience in diverse market conditions.
+<br/> 
+<br/>
+color: black;
+ font-size: 23px;
+ font-family: Founders Grotesk;
+ font-weight: 400;
+ word-wrap: break-word
+---
+// Investment Facing
+color: black;
+ font-size: 36px;
+ font-family: Founders Grotesk;
+ font-weight: 700;
+ line-height: 45px;
+ word-wrap: break-word
+---
+// Primordial is a quant-driven music investment venture reshaping how the world invests in music.
+color: white;
+ font-size: 66px;
+ font-family: Founders Grotesk X-Cond SmBd;
+ font-weight: 600;
+ text-transform: uppercase;
+ line-height: 60px;
+ word-wrap: break-word
+---
+// For Artist 
+color: #2D2246;
+ font-size: 21.78px;
+ font-family: Founders Grotesk;
+ font-weight: 700;
+ line-height: 70px;
+ word-wrap: break-word
+---
+// //
+color: #7E44F3;
+ font-size: 21.78px;
+ font-family: Founders Grotesk;
+ font-weight: 700;
+ line-height: 70px;
+ word-wrap: break-word
+---
+// For Investors 
+color: #2D2246;
+ font-size: 21.78px;
+ font-family: Founders Grotesk;
+ font-weight: 700;
+ line-height: 70px;
+ word-wrap: break-word
+---
+// //
+color: #7E44F3;
+ font-size: 21.78px;
+ font-family: Founders Grotesk;
+ font-weight: 700;
+ line-height: 70px;
+ word-wrap: break-word
+---
+// For Industry Professionals 
+color: #2D2246;
+ font-size: 21.78px;
+ font-family: Founders Grotesk;
+ font-weight: 700;
+ line-height: 70px;
+ word-wrap: break-word
+---
+// //
+color: #7E44F3;
+ font-size: 21.78px;
+ font-family: Founders Grotesk;
+ font-weight: 700;
+ line-height: 70px;
+ word-wrap: break-word
+---
+// Contact us
+color: white;
+ font-size: 14px;
+ font-family: Fira Code;
+ font-weight: 700;
+ line-height: 45px;
+ word-wrap: break-word
+---
+// ©Primordial 2025 // Legal // terms of use
+color: white;
+ font-size: 12px;
+ font-family: Founders Grotesk;
+ font-weight: 400;
+ text-transform: uppercase;
+ line-height: 18px;
+ word-wrap: break-word
