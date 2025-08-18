@@ -13,25 +13,25 @@ export const Web = (): JSX.Element => {
     {
       title: "Investors",
       description:
-        "Provide differentiated returns and access to a community of industry participants to fund other creative projects",
+        "Turn music into a transparent, yield-generating asset class.",
       position: { top: "39px", left: "174px" },
     },
     {
-      title: "Artists",
+      title: "Creators",
       description:
-        "Empowering artists with not only capital but professional development and freedom to launch future projects",
+        "Access capital and retain control—like founders, not freelancers.",
       position: { top: "265px", left: "174px" },
     },
     {
       title: "Industry Professionals",
       description:
-        "Access to a wider pipeline of creatives and benefit from network effects in the likes of a creative agency",
+        "Price, manage, and monetize catalogs with clarity and precision.",
       position: { top: "71px", left: "1060px" },
     },
     {
       title: "Music Tech",
       description:
-        "Create an open platform for other technologists to make the industry more transparent and data-driven",
+        "Build smarter tools on structured, real-time IP data.",
       position: { top: "335px", left: "1060px" },
     },
   ];
@@ -50,7 +50,7 @@ export const Web = (): JSX.Element => {
             src="https://c.animaapp.com/iORgyB1o/img/group-118@2x.png"
           />
 
-          <nav className="absolute top-5 left-[424px] flex gap-4">
+          <nav className="absolute top-5 left-[854px] flex gap-4">
             {navigationItems.map((item, index) => (
               <a
                 key={index}
@@ -65,19 +65,18 @@ export const Web = (): JSX.Element => {
             ))}
           </nav>
 
-          <div className="absolute w-[180px] h-[45px] top-[29px] left-[1050px]">
+          {/* <div className="absolute w-[180px] h-[45px] top-[29px] left-[1050px]">
             <button className="absolute w-[180px] h-[30px] top-2 left-0 bg-[#7e44f3] rounded-[3px]" />
             <span className="absolute top-0 left-11 [font-family:'Fira_Code',Helvetica] font-bold text-white text-sm tracking-[0] leading-[45px] whitespace-nowrap">
               Contact us
             </span>
-          </div>
+          </div> */}
         </header>
 
         {/* Hero Section */}
         <section className="absolute w-[1440px] h-[600px] top-[100px] left-0 bg-[url(https://c.animaapp.com/iORgyB1o/img/still-2025-05-03-141559-3-5-1-1.png)] bg-cover bg-[50%_50%]">
-          <h1 className="absolute w-[380px] top-12 left-[50px] [font-family:'Founders_Grotesk_X-Cond_SmBd',Helvetica] font-semibold text-white text-[66px] tracking-[0] leading-[60px] uppercase">
-            PRIMORDIAL IS A QUANT-DRIVEN MUSIC INVESTMENT VENTURE RESHAPING HOW
-            THE WORLD INVESTS IN MUSIC.
+          <h1 className="absolute w-[380px] top-24 left-[50px] [font-family:'Founders_Grotesk_X-Cond_SmBd',Helvetica] font-semibold text-white text-[66px] tracking-[0] leading-[60px] uppercase">
+          Primordial is a quant-driven music investment venture building the future of creative capital
           </h1>
         </section>
 
@@ -85,19 +84,20 @@ export const Web = (): JSX.Element => {
         <section className="h-[600px] top-[700px] bg-[url(https://c.animaapp.com/iORgyB1o/img/vector.svg)] bg-cover absolute w-[1440px] left-0">
           <div className="relative w-[1300px] h-[600px] left-[117px] bg-[url(https://c.animaapp.com/iORgyB1o/img/group.png)] bg-cover">
             <img
-              className="absolute w-[77px] h-[88px] top-[89px] left-[524px]"
+              className="absolute w-[77px] h-[88px] top-[89px] left-[550px]"
               alt="Mission Icon"
               src="https://c.animaapp.com/iORgyB1o/img/group-162@2x.png"
             />
 
-            <h2 className="absolute top-[209px] left-[466px] [font-family:'Founders_Grotesk-Bold',Helvetica] font-bold text-white text-4xl tracking-[0] leading-[45px] whitespace-nowrap">
+            <h2 className="absolute top-[209px] left-[500px] [font-family:'Founders_Grotesk-Bold',Helvetica] font-bold text-white text-4xl tracking-[0] leading-[45px] whitespace-nowrap">
               Our Mission
             </h2>
 
-            <p className="absolute w-[380px] top-[264px] left-[366px] [font-family:'Founders_Grotesk-Regular',Helvetica] font-normal text-white text-[23px] text-center tracking-[0] leading-[normal]">
+            <p className="absolute w-[380px] top-[264px] left-[400px] [font-family:'Founders_Grotesk-Regular',Helvetica] font-normal text-white text-[23px] text-center tracking-[0] leading-[normal]">
               To build a new ecosystem where capital and creativity co-exist —
               unlocking new forms of artistic expression, financial opportunity,
               and cultural impact. <br />
+              <br />
               We are here to redefine how value flows through music — We&apos;re
               creating the next evolution of the music market: transparent,
               data-rich, win-win.
@@ -109,9 +109,9 @@ export const Web = (): JSX.Element => {
         <section className="h-[600px] top-[1300px] bg-[url(https://c.animaapp.com/iORgyB1o/img/01-1.png)] bg-cover bg-[50%_50%] absolute w-[1440px] left-0">
           <div className="absolute top-[205px] left-[150px]">
             <h3 className="[font-family:'Founders_Grotesk-Bold',Helvetica] font-bold text-black text-4xl tracking-[0] leading-[45px] whitespace-nowrap">
-              Creative Facing
+            To Creators
             </h3>
-            <p className="w-[380px] mt-[45px] [font-family:'Founders_Grotesk-Regular',Helvetica] font-normal text-black text-[23px] tracking-[0] leading-[normal]">
+            <p className="w-[380px] mt-[15px] [font-family:'Founders_Grotesk-Regular',Helvetica] font-normal text-black text-[23px] tracking-[0] leading-[normal]">
               We believe music is more than a product — it&apos;s legacy,
               evolution, and emotion. And the people behind it deserve more than
               a payout. They deserve partnership. <br />
@@ -121,9 +121,9 @@ export const Web = (): JSX.Element => {
 
           <div className="absolute top-[205px] left-[950px]">
             <h3 className="[font-family:'Founders_Grotesk-Bold',Helvetica] font-bold text-black text-4xl tracking-[0] leading-[45px] whitespace-nowrap">
-              Investment Facing
+            To Investors
             </h3>
-            <p className="w-[380px] mt-[45px] [font-family:'Founders_Grotesk-Regular',Helvetica] font-normal text-black text-[23px] tracking-[0] leading-[normal]">
+            <p className="w-[380px] mt-[15px] [font-family:'Founders_Grotesk-Regular',Helvetica] font-normal text-black text-[23px] tracking-[0] leading-[normal]">
               Our system unlocks hidden value, avoids hype cycles, and builds
               portfolios designed for the dual objectives of performance and
               resilience in diverse market conditions.
@@ -222,11 +222,11 @@ export const Web = (): JSX.Element => {
             ©PRIMORDIAL 2025 // LEGAL // TERMS OF USE
           </p>
 
-          <img
+          {/* <img
             className="absolute w-[180px] h-[30px] top-[37px] left-[1144px]"
             alt="Social Media Icons"
             src="https://c.animaapp.com/iORgyB1o/img/socials-icons.svg"
-          />
+          /> */}
         </footer>
       </div>
     </div>

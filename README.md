@@ -29,3 +29,14 @@ If you are satisfied with the result, you can finally build the project for rele
 ```
 npm run build
 ```
+
+
+depoly流程
+✅ 部署成功完成！
+执行的操作总结：
+npm run build - 在master分支构建项目 ✅
+git checkout gh-pages - 切换到gh-pages分支 ✅
+cp -r dist/* . && rm -rf dist - 复制构建文件并清理 ✅
+git add . && git commit -m "Update website" - 提交更改 ✅
+git push origin gh-pages - 推送到远程gh-pages分支 ✅
+git checkout master - 切换回master分支 ✅
