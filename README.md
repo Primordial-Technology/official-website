@@ -40,3 +40,4 @@ cp -r dist/* . && rm -rf dist - 复制构建文件并清理 ✅
 git add . && git commit -m "Update website" - 提交更改 ✅
 git push origin gh-pages - 推送到远程gh-pages分支 ✅
 git checkout master - 切换回master分支 ✅
+git add . && git commit -m "本次提交备注" - master分支提交更改✅
