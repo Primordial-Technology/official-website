@@ -76,20 +76,20 @@ export const signals = [
     title: "Pre-market validation",
     copy:
       "Understand the worth of every stem before entering negotiations. Primordial scenarios reveal true value and the tradeoffs between advance, sale, or securitization routes.",
-    action: { label: "Request valuation", href: "mailto:contact@primordial.fm" }
+    action: { label: "Request valuation", href: "mailto:contact@primordial.net" }
   },
   {
     eyebrow: "For investors",
     title: "Transparent yield curves",
     copy:
       "Get consistent marks, volatility bands, and risk tagging on live and prospective catalogs, enabling underwriting that behaves like modern credit.",
-    action: { label: "Review sample report", href: "mailto:contact@primordial.fm?subject=Sample%20Report" }
+    action: { label: "Review sample report", href: "mailto:contact@primordial.net?subject=Sample%20Report" }
   },
   {
     eyebrow: "For partners",
     title: "Real-time programmatic access",
     copy:
       "Extend Primordial’s dataset into your own tools via API. Blend catalog scores into marketplaces, exchanges, and creator tools without heavy integration work.",
-    action: { label: "Talk to partnerships", href: "mailto:contact@primordial.fm?subject=Partnerships" }
+    action: { label: "Talk to partnerships", href: "mailto:contact@primordial.net?subject=Partnerships" }
   }
 ];

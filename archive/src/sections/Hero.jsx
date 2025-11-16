@@ -40,7 +40,7 @@ export default function Hero() {
             </p>
             <div className="flex flex-wrap items-center gap-4">
               <a
-                href="mailto:contact@primordial.fm"
+                href="mailto:contact@primordial.net"
                 className="inline-flex rounded-full bg-white px-6 py-3 text-sm font-semibold uppercase tracking-[0.25em] text-prim-purple-01 transition hover:bg-prim-purple-05 hover:text-prim-purple-01"
               >
                 Contact Us

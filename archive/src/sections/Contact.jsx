@@ -16,13 +16,13 @@ export default function Contact() {
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-4">
           <a
-            href="mailto:contact@primordial.fm"
+            href="mailto:contact@primordial.net"
             className="rounded-full bg-white px-8 py-3 text-sm font-semibold uppercase tracking-[0.25em] text-prim-purple-01 transition hover:bg-prim-purple-05 hover:text-prim-purple-01"
           >
             Email the team
           </a>
           <a
-            href="mailto:contact@primordial.fm?subject=Primordial%20Brief"
+            href="mailto:contact@primordial.net?subject=Primordial%20Brief"
             className="pill border-white/30 text-white/80 hover:text-white"
           >
             Request briefing deck

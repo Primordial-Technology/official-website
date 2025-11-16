@@ -5,62 +5,22 @@ const LOGO_SRC = "/logo.svg";
 export default function PrimordialMinimalPosterPage() {
   return (
     <div className="min-h-screen text-white">
-      {/* Design tokens & font fallbacks */}
-      <style>{`
-        /* Self-hosted Founders Grotesk webfonts */
-        @font-face {
-          font-family: "Founders Grotesk X-Condensed";
-          src: url("/fonts/FoundersGroteskXCond-Bold.otf") format("opentype");
-          font-weight: 700;
-          font-style: normal;
-          font-display: swap;
-        }
-
-        @font-face {
-          font-family: "Founders Grotesk";
-          src: url("/fonts/FoundersGrotesk-Regular.otf") format("opentype");
-          font-weight: 400;
-          font-style: normal;
-          font-display: swap;
-        }
-
-        @font-face {
-          font-family: "Fira Mono";
-          src: url("/fonts/FiraCode-Regular.woff2") format("woff2");
-          font-weight: 400;
-          font-style: normal;
-          font-display: swap;
-        }
-
-        @font-face {
-          font-family: "Fira Mono";
-          src: url("/fonts/FiraCode-SemiBold.woff2") format("woff2");
-          font-weight: 600;
-          font-style: normal;
-          font-display: swap;
-        }
-
-        :root {
-          --prim-purple-01: #2D2246;
-          --prim-purple-05: #BBB0F7;
-          --prim-hero-bg: #2D2246;
-        }
-        .font-founders {
-          font-family: "Founders Grotesk", system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
-        }
-        .font-founders-condensed {
-          font-family: "Founders Grotesk X-Condensed", system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
-        }
-        .font-mono-alt {
-          font-family: "Fira Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-        }
-      `}</style>
 
       {/* SINGLE HERO SECTION ONLY */}
       <section
         id="hero"
         className="relative min-h-screen overflow-hidden bg-[color:var(--prim-hero-bg)]"
       >
+        {/* M graphic decoration - bottom right background */}
+        <div className="absolute right-0 bottom-0 pointer-events-none z-0 opacity-25 md:opacity-35 translate-x-[10%] translate-y-[8%]">
+          <img
+            src="/m.svg"
+            alt=""
+            className="m-graphic max-w-none"
+            aria-hidden="true"
+          />
+        </div>
+
         {/* Hero content column + header */}
         <div className="relative z-10 max-w-[720px] mx-auto px-6">
           {/* Header / nav, non-sticky */}
@@ -90,11 +50,10 @@ export default function PrimordialMinimalPosterPage() {
               </p>
 
               <a
-                href="mailto:contact@primordial.fm"
-                className="mt-7 inline-flex items-center gap-2 text-sm font-mono-alt tracking-[0.18em] text-[#D7FEFF] uppercase transition hover:underline underline-offset-4"
+                href="mailto:contact@primordial.net"
+                className="mt-7 inline-flex items-center text-sm font-semibold font-mono-alt tracking-[0.18em] text-[color:var(--prim-cyan-bright)] uppercase transition hover:text-white underline underline-offset-4 decoration-2"
               >
                 CONTACT US
-                <span aria-hidden="true">→</span>
               </a>
             </div>
           </div>
@@ -103,4 +62,3 @@ export default function PrimordialMinimalPosterPage() {
     </div>
   );
 }
-
