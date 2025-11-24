@@ -2,78 +2,160 @@ import React from "react";
 
 const LOGO_SRC = "/logo.svg";
 
+// --- Primitives ---
+
+const Section = ({ id, className, children }) => (
+  <section id={id} className={`relative px-6 md:px-12 py-20 md:py-32 ${className}`}>
+    <div className="max-w-[720px] mx-auto relative z-10">
+      {children}
+    </div>
+  </section>
+);
+
+const Eyebrow = ({ children, className = "" }) => (
+  <p className={`mb-6 text-[11px] md:text-xs font-mono-alt tracking-[0.3em] text-prim-purple-05/80 uppercase ${className}`}>
+    {children}
+  </p>
+);
+
+const Heading = ({ children, className = "" }) => (
+  <h2 className={`font-founders-condensed font-bold text-3xl md:text-5xl leading-tight mb-8 ${className}`}>
+    {children}
+  </h2>
+);
+
+const BodyText = ({ children, className = "" }) => (
+  <p className={`text-sm md:text-lg leading-relaxed text-prim-purple-05 ${className}`}>
+    {children}
+  </p>
+);
+
+const HighlightItem = ({ title, children }) => (
+  <div className="mb-8 last:mb-0 border-l border-prim-purple-05/20 pl-6">
+    <h3 className="font-founders font-bold text-lg md:text-xl mb-2 text-white">{title}</h3>
+    <p className="text-sm md:text-base text-prim-purple-05/80 leading-relaxed">{children}</p>
+  </div>
+);
+
+// --- Main Component ---
+
 export default function PrimordialMinimalPosterPage() {
   return (
-    <div className="min-h-screen text-white selection:bg-prim-cyan selection:text-prim-purple-01">
+    <div className="min-h-screen text-white selection:bg-prim-cyan selection:text-prim-purple-01 bg-[color:var(--prim-hero-bg)] relative">
 
-      {/* SINGLE HERO SECTION ONLY */}
-      <section
-        id="hero"
-        className="relative min-h-screen overflow-hidden bg-[color:var(--prim-hero-bg)]"
-      >
-        {/* Background Gradient Overlay for depth */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#3D305E] via-transparent to-transparent opacity-60 pointer-events-none z-0" />
+      {/* Background Gradient Overlay for depth (Global) */}
+      <div className="fixed inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#3D305E] via-transparent to-transparent opacity-60 pointer-events-none z-0" />
 
-        {/* M graphic decoration - bottom right background */}
-        <div className="absolute right-0 bottom-0 pointer-events-none z-0 opacity-20 md:opacity-30 translate-x-[10%] translate-y-[8%] mix-blend-overlay animate-float">
-          <img
-            src="/m.svg"
-            alt=""
-            className="m-graphic max-w-none"
-            aria-hidden="true"
-          />
+      {/* M graphic decoration - Fixed background */}
+      <div className="fixed right-0 bottom-0 pointer-events-none z-0 opacity-20 md:opacity-30 translate-x-[10%] translate-y-[8%] mix-blend-overlay animate-float">
+        <img
+          src="/m.svg"
+          alt=""
+          className="m-graphic max-w-none"
+          aria-hidden="true"
+        />
+      </div>
+
+      {/* Navigation */}
+      <header className="fixed top-0 left-0 right-0 z-50 px-6 md:px-12 py-6 md:py-8">
+        <div className="max-w-screen-xl mx-auto flex justify-between items-center">
+          <img src={LOGO_SRC} alt="Primordial logo" className="h-6 sm:h-8 w-auto" />
+          <a
+            href="mailto:contact@primordial.net"
+            className="hidden sm:inline-flex items-center text-xs font-mono-alt font-bold tracking-[0.15em] text-white hover:text-prim-cyan transition-colors uppercase"
+          >
+            Get in Touch
+          </a>
         </div>
+      </header>
 
-        {/* Hero content column + header */}
-        <div className="relative z-10 max-w-screen-xl mx-auto px-6 md:px-12 flex flex-col min-h-screen">
-          {/* Header / nav */}
-          <header className="flex items-center justify-between py-8 md:py-12 animate-fade-in-up">
-            <div className="flex items-center gap-3">
-              <img
-                src={LOGO_SRC}
-                alt="Primordial logo"
-                className="h-8 sm:h-10 w-auto"
-              />
-            </div>
+      <main className="relative z-10">
+        {/* 1. HERO SECTION */}
+        <section id="hero" className="min-h-screen flex items-center px-6 md:px-12 pt-20">
+          <div className="max-w-[720px] mx-auto w-full">
+            <Eyebrow className="animate-fade-in-up delay-100">
+              Financial Infrastructure for Music Royalties
+            </Eyebrow>
 
-            {/* Header CTA - Desktop only or simplified */}
-            <a
-              href="mailto:contact@primordial.net"
-              className="hidden sm:inline-flex items-center px-5 py-2 text-xs font-mono-alt font-bold tracking-[0.15em] text-white border border-white/20 hover:border-prim-cyan hover:text-prim-cyan hover:bg-prim-cyan/5 transition-all duration-300 uppercase rounded-sm"
-            >
-              Get in Touch
-            </a>
-          </header>
+            <h1 className="font-founders-condensed font-bold text-[48px] leading-[0.9] sm:text-[64px] md:text-[80px] lg:text-[96px] tracking-tight animate-fade-in-up delay-200 mb-8">
+              Redefining How The <br className="hidden sm:block" />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-prim-purple-05">World Values Creativity</span>
+            </h1>
 
-          {/* Hero text block - Centered vertically */}
-          <div className="flex-grow flex items-center pb-20">
-            <div className="max-w-2xl">
-              <p className="mb-8 text-[11px] md:text-xs font-mono-alt tracking-[0.3em] text-prim-purple-05/80 uppercase animate-fade-in-up delay-100">
-                Financial Infrastructure for Music Royalties
-              </p>
-
-              <h1 className="font-founders-condensed font-bold text-[48px] leading-[0.9] sm:text-[64px] md:text-[80px] lg:text-[96px] tracking-tight animate-fade-in-up delay-200">
-                Redefining How The <br className="hidden sm:block" />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-prim-purple-05">World Values Creativity</span>
-              </h1>
-
-              <p className="mt-8 text-sm md:text-lg leading-relaxed text-prim-purple-05 max-w-lg animate-fade-in-up delay-300">
-                Primordial is building the financial infrastructure of the creative economy. Our proprietary data pipeline and quantitative models reveal the true value of music, turning creative IP into a transparent, investable asset class.
-              </p>
-
-              <div className="mt-10 animate-fade-in-up delay-400">
-                <a
-                  href="mailto:contact@primordial.net"
-                  className="group inline-flex items-center gap-3 text-sm font-bold font-mono-alt tracking-[0.18em] text-prim-cyan uppercase transition-all hover:text-white"
-                >
-                  <span className="border-b-2 border-prim-cyan group-hover:border-white pb-1 transition-colors">Contact Us</span>
-                  <span className="inline-block transition-transform group-hover:translate-x-1">→</span>
-                </a>
-              </div>
+            <div className="animate-fade-in-up delay-300">
+              <a
+                href="mailto:contact@primordial.net"
+                className="group inline-flex items-center gap-3 text-sm font-bold font-mono-alt tracking-[0.18em] text-prim-cyan uppercase transition-all hover:text-white"
+              >
+                <span className="border-b-2 border-prim-cyan group-hover:border-white pb-1 transition-colors">Contact Us</span>
+                <span className="inline-block transition-transform group-hover:translate-x-1">→</span>
+              </a>
             </div>
           </div>
+        </section>
+
+        {/* 2. ABOUT SECTION */}
+        <Section id="about">
+          <Heading>About</Heading>
+          <div className="border-l border-prim-purple-05/20 pl-6">
+            <BodyText>
+              Primordial is building the financial infrastructure of the creative economy, starting with the music royalties market.
+              <br /><br />
+              Our proprietary data pipeline and quantitative models reveal the true value of music, transforming creative IP from an opaque, intuition-driven asset into a transparent, investable asset class.
+            </BodyText>
+          </div>
+        </Section>
+
+        {/* 3. PRODUCT HIGHLIGHTS SECTION */}
+        <Section id="product">
+          <Heading>Product Highlights</Heading>
+
+          <div className="mt-12 space-y-12">
+            <HighlightItem title="Data">
+              Unifies fragmented royalty, usage, and metadata into a single structured source of truth.
+            </HighlightItem>
+            <HighlightItem title="Automation">
+              Transforms manual DCF workflows into instant, scalable valuations, cutting time and cost by 100x.
+            </HighlightItem>
+            <HighlightItem title="Quant Precision">
+              Applies systematic modeling to capture the true value of music where traditional models fall short.
+            </HighlightItem>
+          </div>
+        </Section>
+
+        {/* 4. CTA / FOOTER SECTION */}
+        <Section id="contact" className="pb-32 md:pb-48">
+          <Heading>Discover the true worth <br /> of your music.</Heading>
+
+          <div className="border-l border-prim-purple-05/20 pl-6 mb-12">
+            <BodyText>
+              Your catalog holds stories, value, and legacy, we help you see its full potential.
+              <br /><br />
+              Gain confidence, clarity, and control, all before going to market.
+            </BodyText>
+          </div>
+
+          <div className="pl-6">
+            <a
+              href="mailto:contact@primordial.net"
+              className="group inline-flex items-center gap-4 text-base md:text-lg font-bold font-mono-alt tracking-[0.18em] text-prim-cyan uppercase transition-all hover:text-white"
+            >
+              <span className="border-b-2 border-prim-cyan group-hover:border-white pb-1 transition-colors">Contact Us</span>
+              <span className="inline-block transition-transform group-hover:translate-x-2">→</span>
+            </a>
+          </div>
+        </Section>
+
+      </main>
+
+      {/* Simple Footer */}
+      <footer className="absolute bottom-0 left-0 right-0 py-8 px-6 md:px-12 text-center md:text-left border-t border-white/5">
+        <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-[10px] font-mono-alt text-prim-purple-05/40 uppercase tracking-widest">
+            © {new Date().getFullYear()} Primordial. All rights reserved.
+          </p>
         </div>
-      </section>
+      </footer>
     </div>
   );
 }
