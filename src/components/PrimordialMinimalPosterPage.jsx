@@ -98,7 +98,7 @@ export default function PrimordialMinimalPosterPage() {
           <img src={LOGO_SRC} alt="Primordial logo" className="h-6 sm:h-8 w-auto" />
           <a
             href="mailto:contact@primordial.net"
-            className="hidden sm:inline-flex items-center text-xs font-mono-alt font-bold tracking-[0.15em] text-white hover:text-prim-cyan transition-colors uppercase"
+            className="hidden sm:inline-flex items-center text-xs font-mono-alt font-bold tracking-[0.15em] text-white hover:text-[#6ADDDD] transition-colors uppercase"
           >
             Get in Touch
           </a>
