@@ -47,7 +47,7 @@ const Section = ({ id, className, children }) => (
 );
 
 const Eyebrow = ({ children, className = "" }) => (
-  <p className={`mb-6 text-[11px] md:text-xs font-mono-alt tracking-[0.3em] text-prim-purple-05/80 uppercase ${className}`}>
+  <p className={`mb-6 text-[11px] md:text-xs font-mono-alt tracking-[0.3em] text-white/80 uppercase ${className}`}>
     {children}
   </p>
 );
@@ -59,7 +59,7 @@ const Heading = ({ children, className = "" }) => (
 );
 
 const BodyText = ({ children, className = "" }) => (
-  <p className={`text-sm md:text-lg leading-relaxed text-prim-purple-05 ${className}`}>
+  <p className={`text-sm md:text-lg leading-relaxed text-white ${className}`}>
     {children}
   </p>
 );
@@ -68,7 +68,7 @@ const HighlightItem = ({ title, children, delay }) => (
   <FadeIn delay={delay}>
     <div className="mb-8 last:mb-0 border-l border-prim-purple-05/20 pl-6">
       <h3 className="font-founders-condensed font-bold text-2xl md:text-3xl mb-2 text-white uppercase tracking-wide">{title}</h3>
-      <p className="text-sm md:text-base text-prim-purple-05/80 leading-relaxed">{children}</p>
+      <p className="text-sm md:text-base text-white/80 leading-relaxed">{children}</p>
     </div>
   </FadeIn>
 );
@@ -118,7 +118,7 @@ export default function PrimordialMinimalPosterPage() {
             <FadeIn delay={200}>
               <h1 className="font-founders-condensed font-bold text-[48px] leading-[0.9] sm:text-[64px] md:text-[80px] lg:text-[96px] tracking-tight mb-8">
                 Redefining How The <br className="hidden sm:block" />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-prim-purple-05">World Values Creativity</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-transparent">World Values Creativity</span>
               </h1>
             </FadeIn>
 
